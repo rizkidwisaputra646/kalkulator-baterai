@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Waktu Pengisian HP dan Daya Charger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hitung Waktu Pengisian HP dan Daya Charger</h1>
+
+        <label for="capacity">Kapasitas Baterai (mAh):</label>
+        <input type="number" id="capacity" placeholder="Contoh: 5000" required>
+
+        <label for="voltage">Voltase Charger (V):</label>
+        <input type="number" id="voltage" placeholder="Contoh: 9" required>
+
+        <label for="current">Arus Charger (A):</label>
+        <input type="number" id="current" placeholder="Contoh: 2.2" step="0.1" required>
+
+        <button onclick="calculateChargingTime()">Hitung Waktu Pengisian dan Daya</button>
+
+        <h2>Waktu Pengisian: <span id="chargingTime" class="result">0</span> jam</h2>
+        <h2>Daya Charger: <span id="power" class="result">0</span> Watt</h2>
+
+        <p class="info">* Waktu pengisian bisa bervariasi tergantung pada kondisi baterai dan charger.</p>
+    </div>
+
+    <footer>
+        <p>Dibuat oleh <a href="#">Rizki Dwi Saputra</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
